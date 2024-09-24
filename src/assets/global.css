@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Sora:wght@100..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --lavanda: #9B6CF0;
+    --lavanda-profunda: #7960F2;
+    --lavanda-suave: #998EF7;
+    --gris-suave: #F3F3FF;
+    --gris-oscuro: #3D3D3D;
+    --gris-medio: #939393;
+    --morado: #30275E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, var(--gris-suave) 0%, var(--lavanda-profunda) 90%);
+    min-height: 100vh;
+}
