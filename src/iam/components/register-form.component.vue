@@ -27,7 +27,7 @@
 
             <div class="form__checkbox-container">
                 <pv-checkbox id="checkbox" v-model="checked" binary />
-                <label>Remember me</label>
+                <label>Accept the Terms and Conditions and Privacy Policy</label>
             </div>
         </div>
 
