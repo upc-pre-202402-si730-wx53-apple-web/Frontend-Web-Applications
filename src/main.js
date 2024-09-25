@@ -11,6 +11,7 @@ import Avatar from "primevue/avatar";
 import Button from "primevue/button";
 
 import 'primeflex/primeflex.css'
+import Chart from "primevue/chart";
 
 const app = createApp(App);
 
@@ -29,5 +30,6 @@ app.use(PrimeVue, {
 app.component('pv-avatar', Avatar)
 app.component('pv-button', Button)
 app.component('pv-card', Card);
+app.component('pv-chart', Chart)
 
 app.mount('#app')
