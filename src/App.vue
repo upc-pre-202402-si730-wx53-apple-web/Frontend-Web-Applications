@@ -1,16 +1,31 @@
 <template>
   <toolbar></toolbar>
   <router-view />
+  <div id="app">
+    <UserProfile />
+  </div>
 </template>
 
 <script>
 import toolbar from './public/components/Toolbar.vue'
-
+import UserProfile from './users/UserProfile/Register.vue';
+  
 export default {
+  name: "App",
   components: {
-    toolbar
+    toolbar,
+    UserProfile
   }
 }
 </script>
 
-<style></style>
+<style>
+  #app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>
