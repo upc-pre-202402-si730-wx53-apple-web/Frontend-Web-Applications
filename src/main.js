@@ -10,10 +10,13 @@ import FloatLabel from 'primevue/floatlabel';
 import Password from 'primevue/password';
 import Button from 'primevue/button';
 import Checkbox from 'primevue/checkbox';
+import router from './routes/index.js';
 
 const app = createApp(App);
 
+app.use(router);
 app.use(i18n);
+
 app.use(PrimeVue, {
     theme: {
         preset: Aura,

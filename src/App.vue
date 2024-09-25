@@ -1,19 +1,16 @@
 <template>
-  <div id="app">
-    <MessagePanel />
-  </div>
+  <toolbar></toolbar>
+  <router-view />
 </template>
 
 <script>
-import MessagePanel from './components/messaging/MessagePanel.vue';
+import toolbar from './public/components/Toolbar.vue'
 
 export default {
   components: {
-    MessagePanel,
-  },
-};
+    toolbar
+  }
+}
 </script>
 
-<style>
-
-</style>
+<style></style>
