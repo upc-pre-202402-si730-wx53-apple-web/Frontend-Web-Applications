@@ -7,6 +7,8 @@ import Panel from "primevue/panel";
 import Card from "primevue/card";
 
 import 'primeicons/primeicons.css'
+import Avatar from "primevue/avatar";
+import Button from "primevue/button";
 
 
 const app = createApp(App);
@@ -23,6 +25,8 @@ app.use(PrimeVue, {
     }
 });
 
+app.component('pv-avatar', Avatar)
+app.component('pv-button', Button)
 app.component('pv-card', Card);
 app.component('pv-panel', Panel)
 
