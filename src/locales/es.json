@@ -1,5 +1,13 @@
 {
-    "Log-in": "Acceso",
+  "Log-in": "Acceso",
   "Notification": "Notificaciones",
-  "Profile": "Perfil"
+  "Profile": "Perfil",
+  "workspace": {
+    "title": "Workspace",
+    "name": "Nombre",
+    "schedule": "Horario",
+    "reviews": "Reseñas",
+    "message": "Mensaje",
+    "services": "Servicios"
   }
+}

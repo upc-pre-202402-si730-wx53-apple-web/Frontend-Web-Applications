@@ -1,6 +1,13 @@
 {
   "Log-in": "Log in",
-    "Notification": "Notification",
-    "Profile": "Profile"
-  
+  "Notification": "Notification",
+  "Profile": "Profile",
+  "workspace": {
+    "title": "Workspace",
+    "name": "Name",
+    "schedule": "Schedule",
+    "reviews": "Reviews",
+    "message": "Message",
+    "services": "Services"
+  }
 }
