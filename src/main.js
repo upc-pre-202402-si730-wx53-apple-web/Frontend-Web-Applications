@@ -29,6 +29,5 @@ app.use(PrimeVue, {
 app.component('pv-avatar', Avatar)
 app.component('pv-button', Button)
 app.component('pv-card', Card);
-app.component('pv-panel', Panel)
 
 app.mount('#app')
