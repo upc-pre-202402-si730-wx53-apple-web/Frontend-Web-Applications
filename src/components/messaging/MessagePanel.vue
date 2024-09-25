@@ -1,25 +1,5 @@
 <template>
   <div class="chat-container">
-    <!-- New Gray Bar -->
-    <div class="top-bar">
-      <div class="left-icons">
-        <div class="left-icons2">
-          <i class="pi pi-globe" ></i>
-        </div>
-        <select v-model="selectedLanguage" class="custom-select">
-          <option value="EN">EN</option>
-          <option value="ES">ES</option>
-        </select>
-        <div class="left-icons3">
-          <i class="pi pi-bell" ></i>
-        </div>
-      </div>
-      <div class="right-text">
-        <h3>Log out</h3> <br>
-        <h3>Profile</h3>
-      </div>
-    </div>
-
     <!-- Sidebar for Messages -->
     <div class="sidebar">
       <h2>Messages</h2>
@@ -27,12 +7,7 @@
         <i class="pi pi-folder"></i> Case history
       </button>
       <div class="contact-list">
-        <div
-            class="contact"
-            v-for="contact in contacts"
-            :key="contact.id"
-            @click="openChat(contact)"
-        >
+        <div class="contact" v-for="contact in contacts" :key="contact.id" @click="openChat(contact)">
           <img :src="contact.avatar" alt="Avatar" class="avatar" />
           <p>{{ contact.name }}</p>
         </div>
@@ -59,18 +34,8 @@
 
       <!-- Chat Input -->
       <div class="chat-input">
-        <i
-            class="pi pi-paperclip"
-            @click="toggleMenu"
-            :class="{ 'rotate': showMenu }"
-            ref="paperclip"
-        ></i>
-        <input
-            type="text"
-            placeholder="Write your message"
-            v-model="newMessage"
-            @keyup.enter="sendMessage"
-        />
+        <i class="pi pi-paperclip" @click="toggleMenu" :class="{ 'rotate': showMenu }" ref="paperclip"></i>
+        <input type="text" placeholder="Write your message" v-model="newMessage" @keyup.enter="sendMessage" />
 
         <!-- Menú para adjuntar archivos -->
         <div v-if="showMenu" class="menu menu-active" ref="menu">
@@ -82,12 +47,7 @@
             <i class="pi pi-file"></i>
             <span>Document</span>
           </div>
-          <input
-              type="file"
-              ref="fileInput"
-              @change="handleFileUpload"
-              style="display: none"
-          />
+          <input type="file" ref="fileInput" @change="handleFileUpload" style="display: none" />
         </div>
       </div>
     </div>
@@ -102,11 +62,11 @@ export default {
     return {
       newMessage: '',
       messages: [],
-      activeChat: {id: null, name: ''},
+      activeChat: { id: null, name: '' },
       contacts: [
-        { id: 1, name: 'Fidel', avatar: 'src/assets/images/avatar1.jpeg', messages: [{id: 1, text: 'Hello Fidel!'}], },
-        { id: 2, name: 'Monica', avatar: 'src/assets/images/avatar2.jpg', messages: [{id: 1, text: 'Hi Monica!'}], },
-        { id: 3, name: 'Silvia', avatar: 'src/assets/images/avatar3.png', messages: [{id: 1, text: 'Hey Silvia!'}], },
+        { id: 1, name: 'Fidel', avatar: 'src/assets/images/avatar1.jpeg', messages: [{ id: 1, text: 'Hello Fidel!' }], },
+        { id: 2, name: 'Monica', avatar: 'src/assets/images/avatar2.jpg', messages: [{ id: 1, text: 'Hi Monica!' }], },
+        { id: 3, name: 'Silvia', avatar: 'src/assets/images/avatar3.png', messages: [{ id: 1, text: 'Hey Silvia!' }], },
       ],
       showMenu: false,
       selectedLanguage: 'EN',
@@ -188,7 +148,8 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed; /* Make sure it stays on top */
+  position: fixed;
+  /* Make sure it stays on top */
   top: 0;
   z-index: 10;
   left: 2px;
@@ -197,15 +158,17 @@ export default {
 .left-icons {
   display: flex;
   align-items: center;
-  gap: 10px; /* Espacio entre los elementos */
+  gap: 10px;
+  /* Espacio entre los elementos */
 }
 
-.left-icons select  {
+.left-icons select {
   background: none;
   border: none;
   font-size: 16px;
   color: inherit;
-  appearance: none; /* Oculta el estilo nativo */
+  appearance: none;
+  /* Oculta el estilo nativo */
   cursor: pointer;
   margin-left: 1020px;
   position: absolute;
@@ -224,7 +187,8 @@ export default {
 }
 
 .left-icons select:focus {
-  outline: none; /* Elimina el borde al hacer focus */
+  outline: none;
+  /* Elimina el borde al hacer focus */
 }
 
 .right-text {
@@ -235,7 +199,8 @@ export default {
 }
 
 .right-text h3 {
-  margin: 0; /* Elimina márgenes predeterminados */
+  margin: 0;
+  /* Elimina márgenes predeterminados */
 
 }
 
@@ -245,7 +210,8 @@ export default {
   background-color: #f7f7f7;
   border-right: 1px solid #000;
   padding: 20px;
-  margin-top: 34px; /* Adjust for the gray bar */
+  margin-top: 34px;
+  /* Adjust for the gray bar */
 }
 
 .sidebar h2 {
@@ -299,7 +265,8 @@ export default {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  margin-top: 70px; /* Adjust for the gray bar */
+  margin-top: 70px;
+  /* Adjust for the gray bar */
 }
 
 /* Chat Header */
@@ -372,14 +339,16 @@ export default {
 
 /* Asegúrate de que el ícono de la campana esté alineado con el selector */
 .pi-bell {
-  margin-left: 1030px; /* Empuja el ícono de la campana hacia la derecha */
+  margin-left: 1030px;
+  /* Empuja el ícono de la campana hacia la derecha */
 }
 
 .chat-input i {
   font-size: 24px;
   color: grey;
   position: absolute;
-  left: 25px; /* Coloca el ícono en la parte izquierda */
+  left: 25px;
+  /* Coloca el ícono en la parte izquierda */
   cursor: pointer;
   transition: transform 0.3s ease;
 }
@@ -394,11 +363,13 @@ export default {
   border-radius: 5px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   width: 150px;
-  top: -72px; /* Ajusta la posición */
+  top: -72px;
+  /* Ajusta la posición */
   left: 20px;
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
   opacity: 0;
-  transform: translateY(20px); /* Empieza más abajo */
+  transform: translateY(20px);
+  /* Empieza más abajo */
   display: none;
 }
 
@@ -424,7 +395,8 @@ export default {
 
 .menu-active {
   opacity: 1;
-  transform: translateY(0); /* Despliega el menú hacia la posición original */
+  transform: translateY(0);
+  /* Despliega el menú hacia la posición original */
   display: block;
 }
 </style>
