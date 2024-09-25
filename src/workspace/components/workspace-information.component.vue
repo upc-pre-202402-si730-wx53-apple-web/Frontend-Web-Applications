@@ -5,7 +5,7 @@
   <pv-card style="width: 100%">
     <template #title> My Workspace</template>
     <template #content class="relative flex flex-wrap">
-      <pv-avatar image="/assets/img/userPicture.jpeg" size="large" shape="circle" />
+      <pv-avatar image="/img/userPicture.jpeg" size="large" shape="circle" />
       <p> Name: Consultant Name </p>
       <p> Schedule: W-F 9am - 3pm </p>
       <p> Reviews: <i class="pi pi-star-fill" /> <i class="pi pi-star-fill" /> <i class="pi pi-star-fill" /> <i
