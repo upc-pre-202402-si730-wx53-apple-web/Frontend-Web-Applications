@@ -17,7 +17,7 @@
   </pv-card>
 
   <div class="flex flex-row ">
-    <pv-card class="flex m-2" style="width: 40%">
+    <pv-card class="flex m-2" style="width: 50%">
       <template #title> Services </template>
       <template #content>
         <div class="flex flex-wrap flex-column align-items-center">
@@ -26,15 +26,15 @@
         </div>
       </template>
     </pv-card>
-    <pv-card class="flex m-2" style="width: 40%"> >
+    <pv-card class="flex m-2" style="width: 50%"> >
       <template #title> Metrics </template>
       <template #content>
         <div class="flex flex-wrap flex-column align-items-center">
-
         </div>
       </template>
     </pv-card>
   </div>
+
 </template>
 
 <style scoped>
