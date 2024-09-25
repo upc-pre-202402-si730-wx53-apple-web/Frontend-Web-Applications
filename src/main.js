@@ -10,6 +10,7 @@ import 'primeicons/primeicons.css'
 import Avatar from "primevue/avatar";
 import Button from "primevue/button";
 
+import 'primeflex/primeflex.css'
 
 const app = createApp(App);
 
