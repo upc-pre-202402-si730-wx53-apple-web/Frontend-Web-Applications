@@ -1,1 +1,10 @@
-{}
+{
+  "workspace": {
+    "title": "Workspace",
+    "name": "Nombre",
+    "schedule": "Horario",
+    "reviews": "Reseñas",
+    "message": "Mensaje",
+    "services": "Servicios"
+  }
+}
