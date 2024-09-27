@@ -1,9 +1,9 @@
 <script>
+import changeLanguage from "./changeLanguage.vue";
+
 export default {
-  methods: {
-    changeLanguage() {
-      alert('Change language');
-    }
+  components: {
+    changeLanguage
   }
 };
 </script>
@@ -11,17 +11,15 @@ export default {
 <template>
   <div class="toolbar">
     <div class="toolbar-right">
-      <div class="toolbar-item" @click="changeLanguage">
-        <i class="fas fa-globe"></i> EN <i class="fas fa-caret-down"></i>
+      <changeLanguage />
+      <div class="toolbar-item">
+        <i class="fas fa-bell"></i> {{ $t("Notification") }}
       </div>
       <div class="toolbar-item">
-        <i class="fas fa-bell"></i>
+        {{ $t("Log-in") }}
       </div>
       <div class="toolbar-item">
-        Log in
-      </div>
-      <div class="toolbar-item">
-        Profile
+        {{ $t("Profile") }}
       </div>
     </div>
   </div>
