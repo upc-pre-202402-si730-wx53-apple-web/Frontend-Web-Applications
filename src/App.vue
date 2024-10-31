@@ -1,8 +1,16 @@
-<script setup>
-</script>
-
 <template>
-
+  <toolbar></toolbar>
+  <router-view />
 </template>
 
-<style scoped></style>
+<script>
+import toolbar from './public/components/Toolbar.vue'
+
+export default {
+  components: {
+    toolbar
+  }
+}
+</script>
+
+<style></style>
