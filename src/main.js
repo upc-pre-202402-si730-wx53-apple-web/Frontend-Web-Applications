@@ -5,6 +5,7 @@ import App from './App.vue'
 import PrimeVue from 'primevue/config';
 import Aura from '@primevue/themes/aura';
 import i18n from './i18n.js';
+
 import InputText from 'primevue/inputtext';
 import FloatLabel from 'primevue/floatlabel';
 import Password from 'primevue/password';
@@ -42,10 +43,7 @@ app.component('pv-float-label', FloatLabel);
 app.component('pv-password', Password);
 app.component('pv-button', Button);
 app.component('pv-checkbox', Checkbox);
-
-
 app.component('pv-avatar', Avatar)
-app.component('pv-button', Button)
 app.component('pv-card', Card);
 app.component('pv-chart', Chart)
 
