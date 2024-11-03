@@ -14,7 +14,7 @@
     },
     setup() {
       const name=ref('');
-      const email=ref('');
+      const email=ref(''); 
       const password=ref('');
       const plan=ref('');
       const account=ref('');
