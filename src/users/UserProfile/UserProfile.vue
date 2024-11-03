@@ -22,7 +22,7 @@
       const deleteAccount=()=>{
         name.value='';
         email.value='';
-        password.value='';
+        password.value=''; 
         plan.value='';
         account.value='';
       };
