@@ -40,7 +40,7 @@
 </script>
 
 <template>
-  <div class="profile-container">
+  <div class="profile-container"> 
     <div class="profile-card">
       <h2>My Profile</h2>
       <div class="profile-details">
