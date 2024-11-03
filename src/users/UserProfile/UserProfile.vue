@@ -54,7 +54,7 @@
         </div>
         <div class="workspace">
           <i class="pi pi-cog"></i>
-          <span>My Workspace</span>
+          <span>My Workspace</span> 
         </div>
       </div>
     </div>
