@@ -32,7 +32,7 @@
         email,
         password,
         plan,
-        account,
+        account, 
         deleteAccount
       };
     }
