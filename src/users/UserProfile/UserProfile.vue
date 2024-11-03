@@ -7,7 +7,7 @@
 
   export default {
     components: {
-      InputText, 
+      InputText,  
       Password,
       Button,
       Avatar
